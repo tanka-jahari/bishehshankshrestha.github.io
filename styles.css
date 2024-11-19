@@ -18,8 +18,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background-color: #ff6f00; /* Vibrant Orange */
+    padding: 0px 30px;
+    background: #52cd52;
+}
+
+#change-color {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    background: linear-gradient(to bottom, #52cd52, #b97a49) !important;
 }
 
 header h1 a {
@@ -112,7 +120,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 50px 20px;
-    background-color: #ffab40; /* Vibrant Orange Background */
+    background-color: #e6e6dd;
     height: 50vh;
     text-align: center;
     gap: 15px;
@@ -138,7 +146,7 @@ footer {
 /* Proverb Styling */
 .proverb {
     font-size: 20px;
-    color: white;
+    color: black;
     margin: 0;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
@@ -148,10 +156,11 @@ footer {
 .mission-box {
     max-width: 600px;
     margin: 30px auto;
+    margin-top: 50px !important;
     padding: 20px;
-    background-color: #ffe0b2;
+    background-color: #efefea;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -177,7 +186,7 @@ footer {
     margin: 50px auto;
     text-align: center;
     padding: 30px;
-    background-color: #ffe0b2;
+    background-color: #efefea;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
@@ -185,7 +194,7 @@ footer {
 /* Modern Styled Heading */
 .support-heading {
     font-size: 36px;
-    color: #ff6f00;
+    color: #52cd52;
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -213,8 +222,8 @@ footer {
     align-items: center;
     justify-content: center;
     width: 30%;
-    padding: 20px;
-    background-color: #ff6f00; /* Vibrant Orange */
+    padding: 8px;
+    background-color: #52cd52; /* Vibrant Orange */
     color: white;
     text-decoration: none;
     border-radius: 10px;
@@ -229,9 +238,62 @@ footer {
 
 /* Hover Effect for Clickable Boxes */
 .support-box:hover {
-    background-color: #ff9100;
+    background-color: #4ba24b;
     transform: scale(1.05);
 }
+
+/*quiz section*/
+.innersection{
+    width: 42%;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 4px 2px rgba(14, 139, 22, 0.708);;
+  }
+  
+  .quiz-section {
+    padding: 10px;
+    background-color: #ececec;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  
+  #quiz-colour{
+      color: #2ecc71;
+      padding-left: 7px;
+  }
+  
+  #quizh2{
+    display: flex;
+    align-items: start;
+    padding-left: 20px;
+  }
+  
+  .quiz-form {
+    display: inline-block;
+    text-align: left;
+    font-size: 25px;
+    width: 90%;
+  }
+  
+  .quiz-form label {
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
+  }
+  
+  .quiz-form button {
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .quiz-form button:hover {
+      background-color: #38b26b;
+  }
 
 /* Responsive Layout */
 @media (max-width: 768px) {
@@ -253,7 +315,7 @@ footer {
     max-width: 1100px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #ffe0b2;
+    background-color: #efefea;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
@@ -266,7 +328,7 @@ footer {
 
 .help-heading {
     font-size: 36px;
-    color: #ff6f00;
+    color: #52cd52;
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -293,7 +355,7 @@ footer {
 .learn-more-btn {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #ff6f00;
+    background-color: #52cd52;
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -343,7 +405,7 @@ footer {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #ffe0b2;
+    background-color: #efefea;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -352,27 +414,30 @@ footer {
 /* Main Heading */
 .contact-heading {
     font-size: 36px;
-    color: #ff6f00;
+    color: #52cd52;
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+}
+
+.black-color{
+    color: black;
 }
 
 /* Reach Out Link */
 .reach-out-link {
     display: inline-block;
     font-size: 18px;
-    color: #ff6f00;
+    color: white;
     text-decoration: none;
     padding: 12px 25px;
-    background-color: white;
-    border: 2px solid #ff6f00;
+    background-color: #52cd52;
     border-radius: 8px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .reach-out-link:hover {
-    background-color: #ff6f00;
+    background-color: #50ae50;
     color: white;
 }
 
@@ -381,7 +446,7 @@ footer {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #f9fbe7;
+    background-color: #efefea;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -429,7 +494,7 @@ footer {
 /* Main Heading */
 .conditions-heading {
     font-size: 36px;
-    color: #ff6f00;
+    color: #52cd52;
     margin-bottom: 50px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -444,7 +509,7 @@ footer {
 
 /* Individual Condition Boxes */
 .condition-box {
-    background-color: #ffe0b2;
+    background-color: #efefea;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -458,7 +523,7 @@ footer {
 
 .condition-box h3 {
     font-size: 24px;
-    color: #ff6f00;
+    color: #52cd52;
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
 }
@@ -474,17 +539,17 @@ footer {
 .learn-more-btn {
     display: inline-block;
     font-size: 16px;
-    color: #ff6f00;
+    color: #52cd52;
     text-decoration: none;
     padding: 10px 20px;
     background-color: white;
-    border: 2px solid #ff6f00;
+    border: 2px solid #52cd52;
     border-radius: 8px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .learn-more-btn:hover {
-    background-color: #ff6f00;
+    background-color: #52cd52;
     color: white;
 }
 
@@ -542,7 +607,7 @@ footer {
 
 .mental-health-content h2 {
     font-size: 28px;
-    color: #ff6f00;
+    color: #52cd52;
     margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
 }
@@ -576,7 +641,7 @@ footer {
 
 .section-heading {
     font-size: 28px;
-    color: #ff6f00;
+    color: #52cd52;
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -590,7 +655,6 @@ footer {
 
 /* Service Box Styling */
 .service-box {
-    background-color: #ffe0b2;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -600,7 +664,7 @@ footer {
 
 .service-box h3 {
     font-size: 22px;
-    color: #ff6f00;
+    color: #52cd52;
     margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
 }
@@ -647,7 +711,7 @@ footer {
 }
 
 .cta-button {
-    background-color: #ff6f00;
+    background-color: #52cd52;
     color: white;
     padding: 12px 30px;
     border-radius: 30px;
@@ -657,13 +721,14 @@ footer {
 }
 
 .cta-button:hover {
-    background-color: #e65c00;
+    background-color: #4ca94c;
 }
 
 /* Footer Info Section */
 .footer-info {
-    background-color: #f4f4f4;
+    background-color: none;
     padding: 40px 20px;
+    padding-bottom: 10px !important;
     text-align: center;
 }
 
@@ -683,7 +748,7 @@ footer {
 
 .footer-column h3 {
     font-size: 20px;
-    color: #ff6f00;
+    color: #52cd52;
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
 }
@@ -704,7 +769,7 @@ footer {
 }
 
 .footer-column ul li a {
-    color: #ff6f00;
+    color: white;
     text-decoration: none;
 }
 
@@ -735,7 +800,7 @@ body {
 
 /* Header */
 header {
-    background-color: #ff6f00;
+    background-color: #52cd52;
     padding: 15px 30px;
     text-align: center;
 }
@@ -778,7 +843,7 @@ header h1 a {
 
 .help-heading {
     font-size: 36px;
-    color: #ff6f00;
+    color: #52cd52;
     margin-bottom: 20px;
 }
 
@@ -791,7 +856,7 @@ header h1 a {
 
 .learn-more-btn {
     display: inline-block;
-    background-color: #ff6f00;
+    background-color: #52cd52;
     color: white;
     padding: 12px 25px;
     border-radius: 8px;
@@ -801,7 +866,7 @@ header h1 a {
 }
 
 .learn-more-btn:hover {
-    background-color: #e65c00;
+    background-color: #49ae49;
 }
 
 /* Other Ways to Help Section */
@@ -814,7 +879,7 @@ header h1 a {
 
 .section-heading {
     font-size: 28px;
-    color: #ff6f00;
+    color: #52cd52;
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -829,7 +894,7 @@ header h1 a {
 
 /* Individual Boxes Styling */
 .ways-box {
-    background-color: #ffe0b2;
+    background-color: #efefea;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -841,7 +906,7 @@ header h1 a {
 
 .ways-box h3 {
     font-size: 22px;
-    color: #ff6f00;
+    color: #52cd52;
     margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
 }
@@ -854,7 +919,7 @@ header h1 a {
 
 .ways-box .cta-button {
     display: inline-block;
-    background-color: #ff6f00;
+    background-color: #52cd52;
     color: white;
     padding: 12px 25px;
     border-radius: 30px;
@@ -881,7 +946,6 @@ header h1 a {
 
 /* Footer Styling */
 .footer-info {
-    background-color: #d4da95;
     padding: 40px 20px;
     text-align: center;
 }
@@ -902,9 +966,10 @@ header h1 a {
 
 .footer-column h3 {
     font-size: 20px;
-    color: #ff6f00;
+    color: white;
     margin-bottom: 10px;
     font-family: 'Poppins',
+}
 
 
 /* Basic Styling */
@@ -916,8 +981,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ff6f00;
-    padding: 15px 30px;
+    background-color: #52cd52;
+    padding: 0px 30px;
 }
 
 header h1 a {
@@ -963,7 +1028,7 @@ header h1 a {
         display: none; /* Initially hide the nav links */
         flex-direction: column;
         gap: 10px;
-        background-color: #ff6f00;
+        background-color: #52cd52;
         position: absolute;
         top: 70px;
         right: 30px;
@@ -1048,14 +1113,7 @@ header h1 a {
     }
 }
 /* Basic styles for the header and navigation */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-}
+
 
 .nav-menu {
     display: flex;
@@ -1134,7 +1192,7 @@ header {
 /* Connect With Us Button */
 .login-button .primary-btn {
     padding: 10px 20px;
-    background-color: #ff6f00;
+    background-color: #52cd52;
     color: white;
     border: none;
     border-radius: 5px;
@@ -1192,5 +1250,13 @@ header {
 
     .mobile-menu-toggle {
         display: block; /* Show the hamburger menu */
+    }
+}
+
+
+/*for quiz*/
+@media screen and (max-width: 1100px) {
+    .innersection{
+        width: 70% !important;
     }
 }

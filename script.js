@@ -62,3 +62,22 @@ const mobileMenu = document.getElementById('mobile-menu');
 mobileToggle.addEventListener('click', () => {
     mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
 });
+
+
+/*for quiz*/
+function showQuizResult() {
+    const anxiety = document.querySelector('input[name="anxiety"]:checked').value;
+    const focus = document.querySelector('input[name="focus"]:checked').value;
+    const depression = document.querySelector('input[name="depression"]:checked').value;
+    let result = '';
+
+    if (anxiety === 'yes' || focus === 'yes' || depression === 'yes') {
+        result = "It seems you may be experiencing some mental health challenges. Consider seeking support.";
+    } else {
+        result = "You're doing well! Keep maintaining your mental health.";
+    }
+
+    document.getElementById('quiz-result').innerText = result;
+    alert("Your quiz has been submitted.");
+     document.getElementById('quiz-form').reset();
+}

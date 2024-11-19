@@ -41,6 +41,31 @@
                 </a>
             </div>
         </section>
+
+        <!-- Mental Health Quiz Section -->
+<section class="quiz-section">
+    <div class="innersection"> 
+    <h2 id="quizh2">Take a Quick <label id="quiz-colour">Mental Health Quiz </label> </h2>
+    <form class="quiz-form" id="quiz-form">
+      <label>Do you often feel anxious or stressed?</label><br>
+      <input type="radio" name="anxiety" value="yes"> Yes<br>
+      <input type="radio" name="anxiety" value="no"> No<br><br>
+  
+      <label>Do you find it hard to focus on tasks?</label><br>
+      <input type="radio" name="focus" value="yes"> Yes<br>
+      <input type="radio" name="focus" value="no"> No<br><br>
+  
+      <label>Have you been feeling down or hopeless lately?</label><br>
+      <input type="radio" name="depression" value="yes"> Yes<br>
+      <input type="radio" name="depression" value="no"> No<br><br>
+  
+      <button type="button" onclick="showQuizResult()">Submit</button>
+    </form>
+  
+    <p id="quiz-result"></p>
+    </div>
+  </section>
+
     </main>
     <footer>
         <!-- Footer Section -->
@@ -79,7 +104,7 @@
 
        <p>&copy; 2024 Nirvana. All Rights Reserved.</p>
    </footer>
-    
+    <script src="script.js"></script>
     
     
 </body>
