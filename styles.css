@@ -56,7 +56,7 @@ header h1 a {
 }
 
 .nav-links a:hover {
-    color: #ffe0b2; /* Light Orange */
+    color: #eae20d; /* Light Orange */
 }
 
 /* Hero Section with Image Placeholder */
@@ -1075,8 +1075,7 @@ header h1 a {
 
 /* Style the active link (for logo/home) */
 .active {
-    background-color: #04AA6D;
-    color: white;
+    color: black !important;
 }
 
 /* Style the hamburger menu */
